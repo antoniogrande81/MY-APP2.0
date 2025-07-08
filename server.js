@@ -52,7 +52,7 @@ ${contextText}
 Domanda dell'utente:
 ${question}`;
 
-    // 4. Genera la risposta con il modello di chat di OpenAI
+     4. Genera la risposta con il modello di chat di OpenAI
     const chatResponse = await openai.chat.completions.create({
       model: 'gpt-4o',
       messages: [{ role: 'user', content: prompt }],
@@ -67,7 +67,7 @@ ${question}`;
   }
 });
 
-// Avvia il server (QUESTA PARTE MANCAVA)
+ Avvia il server (QUESTA PARTE MANCAVA)
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
   console.log(`🚀 Virgilio è in ascolto sulla porta ${PORT}`);
